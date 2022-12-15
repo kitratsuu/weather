@@ -5,7 +5,7 @@ import { Geocoding } from "../types/geocoding";
 const api = "dcf2d82a9e651f9f2f09ac17ff692863";
 
 export async function fetchLocation(val: string) {
-  let url = "http://api.openweathermap.org/geo/1.0/direct";
+  let url = "https://api.openweathermap.org/geo/1.0/direct";
 
   let parms = new URLSearchParams({
     q: val,
