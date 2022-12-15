@@ -13,14 +13,6 @@ export default function Detail() {
 
   const { error1, loading1, extrafetchloc } = useExtraLocation();
 
-  if (loading1) {
-    console.log("loading");
-  }
-
-  if (error1) {
-    console.log("error");
-  }
-
   if (loading) {
     return <div>Loading...</div>;
   }

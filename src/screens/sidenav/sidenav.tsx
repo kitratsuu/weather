@@ -27,7 +27,6 @@ export default function Sidenav({ day, result }: any) {
   useEffect(() => {
     let allset: any = seperation(datetime);
     setOrganiseddata([...allset]);
-    console.log(organiseddata);
   }, []);
 
   useEffect(() => {

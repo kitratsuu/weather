@@ -36,7 +36,6 @@ export async function fetchWeatherData(cord: Coord) {
   if (wet_responce.status !== 200) {
     throw new Error("Failed");
   } else {
-    console.log(wet_responce);
   }
 
   const result: CurrentWeather = await wet_responce.json();

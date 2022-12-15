@@ -1,5 +1,4 @@
-import { format } from "date-fns";
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useExtraWeatherdata } from "../../repo/weatherhooks";
 import Sidenav from "../sidenav/sidenav";
