@@ -28,7 +28,7 @@ export default function Daydata() {
   }
 
   let img_source: string =
-    "http://openweathermap.org/img/wn/" +
+    "https://openweathermap.org/img/wn/" +
     String(result?.list[i].weather[0].icon) +
     "@2x.png";
   return (

@@ -28,12 +28,12 @@ export default function Detail() {
     https: return <div>{error.message}</div>;
   }
   let img_source: string =
-    "http://openweathermap.org/img/wn/" +
+    "https://openweathermap.org/img/wn/" +
     String(result?.weather[0].icon) +
     "@2x.png";
   return (
     <div className="flex absolute h-full w-full justify-center text-center ">
-      <div className="space-y-2 border-2 border-blue-500 bg-weather opacity-90 bg-no-repeat bg-cover bg-center bg-fixed rounded-2xl lg:text-6xl md:text4xl sm:text-sm bg-cyan-500 px-6 py-6 flex h-full w-full justify-center text-center ">
+      <div className="space-y-2 bg-weather opacity-90 bg-no-repeat bg-cover bg-center bg-fixed rounded-2xl lg:text-6xl md:text4xl sm:text-sm bg-cyan-500 px-6 py-6 flex h-full w-full justify-center text-center ">
         <div className="flex flex-col space-y-5">
           <div className="text-base text-white">
             {format(date, "dd/MMM/yyyy")}
