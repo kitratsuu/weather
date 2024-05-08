@@ -25,7 +25,10 @@ export default function Detail() {
     "@2x.png";
   return (
     <div className="flex absolute h-full w-full justify-center text-center ">
-      <div className="space-y-2 bg-weather opacity-90 bg-no-repeat bg-cover bg-center bg-fixed rounded-2xl lg:text-6xl md:text4xl sm:text-sm bg-cyan-500 px-6 py-6 flex h-full w-full justify-center text-center ">
+      <div
+        className="space-y-2 bg-weather opacity-90 bg-no-repeat bg-cover bg-center bg-fixed rounded-2xl lg:text-6xl md:text4xl sm:text-sm bg-cyan-500 px-6 py-6 flex h-full
+       w-full justify-center text-center "
+      >
         <div className="flex flex-col space-y-5">
           <div className="text-base text-white">
             {format(date, "dd/MMM/yyyy")}
@@ -85,7 +88,8 @@ export default function Detail() {
           <br />
           <button
             type="button"
-            className="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+            className="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300
+             dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
             onClick={async () => {
               await extrafetchloc({
                 name: String(value1.get("name")),
